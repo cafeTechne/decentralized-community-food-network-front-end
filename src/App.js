@@ -22,13 +22,18 @@ export default function App() {
 
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 
-
+        <div className="d-lg-none">
         <Navbar.Brand href="/"><h2>D.C.N.F.</h2></Navbar.Brand>
+        </div>
 
+        <div className="d-none d-lg-block">
+        <Navbar.Brand href="/"><h3>Decentralized Community Food Network</h3></Navbar.Brand>
+        </div>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
+        <Navbar.Collapse id="responsive-navbar-nav justify-content-end">
+          <Nav className="ml-auto" justify="true">
+
 
             <Nav.Item>
               <LinkContainer to="/signUp">
@@ -36,7 +41,7 @@ export default function App() {
 
                   <ButtonGroup className="d-flex">
                     <Button variant="danger">
-                      Sign Up
+                      Join!
                 </Button>
                   </ButtonGroup>
                 </Nav.Link>
